@@ -10,7 +10,7 @@ function JobPagination({ page, setPage, hasNextPage }) {
     <Pagination>
       {page !== 1 && <Pagination.Prev onClick={() => adjustPage(-1)} />}
       {page !== 1 && (
-        <Pagination.Item onClick={() => adjustPage(1)}>1</Pagination.Item>
+        <Pagination.Item onClick={() => setPage(1)}>1</Pagination.Item>
       )}
       {page > 2 && <Pagination.Ellipsis />}
       {page > 2 && (

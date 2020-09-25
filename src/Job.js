@@ -37,7 +37,7 @@ export default function Job({ job }) {
         <Card.Text>
           <Button
             onClick={() => setOpen((prevOpen) => !prevOpen)}
-            variant="primary"
+            variant="info"
           >
             {open ? "Hide Details" : "View Details"}
           </Button>
